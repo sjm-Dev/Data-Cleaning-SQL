@@ -30,7 +30,7 @@ Realizar **Data Cleaning** en un dataset de **despidos masivos** para mejorar la
 
 1. [Descripción](#-descripción)  
 2. [Requisitos](#-requisitos)  
-3. [Pasos de limpieza de datos](#-proceso-de-limpieza-paso-a-paso)  
+3. [Pasos de limpieza de datos](#Proceso-de-limpieza-paso-a-paso)  
    - [Paso 1: Eliminación de duplicados](#paso-1-eliminación-de-duplicados)  
    - [Paso 2: Normalización de datos](#paso-2-normalización-de-datos)  
    - [Paso 3: Manejo de valores nulos](#paso-3-manejo-de-valores-nulos)  
