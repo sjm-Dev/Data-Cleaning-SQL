@@ -6,7 +6,7 @@
 1. [Descripción](#Descripción)  
 2. [Objetivo](#Objetivo)  
 3. [Proceso de limpieza de datos](#Proceso-de-limpieza-paso-a-paso)  
-   - [PASO 1: Eliminación de Duplicados](#PASO-1:-Eliminación-de-Duplicados)  
+   - [PASO 1: Eliminación de Duplicados](#paso-1-eliminación-de-duplicados)  
    - [Paso 2: Normalización de datos](#paso-2-normalización-de-datos)  
    - [Paso 3: Manejo de valores nulos](#paso-3-manejo-de-valores-nulos)  
    - [Paso 4: Eliminación de columnas innecesarias](#paso-4-eliminación-de-columnas-innecesarias)  
@@ -55,7 +55,7 @@ Esto permite:
 
 ✅ Revertir cambios si es necesario.
 
-## **PASO 1: Eliminación de Duplicados**
+## PASO 1: Eliminación de Duplicados
 
 Los datos duplicados pueden distorsionar análisis y visualizaciones, generando **resultados incorrectos**. Para evitar esto:
 
