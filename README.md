@@ -41,7 +41,7 @@ Realizar **Data Cleaning** en un dataset de **despidos masivos** para mejorar la
 
 ---
 
-## **📌 Proceso de limpieza paso a paso**
+## **Proceso de limpieza paso a paso**
 
 Dataset original:
 
