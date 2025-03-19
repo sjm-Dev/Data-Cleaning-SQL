@@ -15,6 +15,7 @@
 6. [Autor](#-autor)  
 
 ---
+aaa
 
 ## **Descripción**
 Este proyecto consiste en la limpieza y optimización de una base de datos utilizando SQL.  
