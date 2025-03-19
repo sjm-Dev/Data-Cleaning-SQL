@@ -8,7 +8,7 @@
 3. [Proceso de limpieza de datos](#Proceso-de-limpieza-paso-a-paso)  
    - [PASO 1: Eliminación de Duplicados](#paso-1-eliminación-de-duplicados)  
    - [PASO 2: Estandarización de Datos](#paso-2-estandarización-de-datos)  
-   - [Paso 3: Manejo de valores nulos](#paso-3-manejo-de-valores-nulos)  
+   - [PASO 3: Manejo de valores nulos](#paso-3-manejo-de-valores-nulos)  
    - [PASO 4: Eliminación de datos NULL y columnas innecesarias](#paso-4-eliminación-de-datos-null-y-columnas-innecesarias)  
 4. [Resultado final](#-resultado-final)  
 5. [Código completo](#-código-completo)  
