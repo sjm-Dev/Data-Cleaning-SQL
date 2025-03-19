@@ -1,6 +1,6 @@
 # 📊 Proyecto de Data Cleaning - MySQL
 
-**Descripción**
+## **Descripción**
 Este proyecto consiste en la limpieza y optimización de una base de datos utilizando SQL.  
 El objetivo es eliminar errores, valores nulos y redundancias para asegurar que los datos sean precisos y listos para análisis.  
 
