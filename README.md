@@ -26,10 +26,20 @@ Realizar **Data Cleaning** en un dataset de **despidos masivos** para mejorar la
 
 ---
 
+## 📌 Contenido  
 
-- INDICE????
+1. [Descripción](#-descripción)  
+2. [Requisitos](#-requisitos)  
+3. [Pasos de limpieza de datos](#-pasos-de-limpieza-de-datos)  
+   - [Paso 1: Eliminación de duplicados](#paso-1-eliminación-de-duplicados)  
+   - [Paso 2: Normalización de datos](#paso-2-normalización-de-datos)  
+   - [Paso 3: Manejo de valores nulos](#paso-3-manejo-de-valores-nulos)  
+   - [Paso 4: Eliminación de columnas innecesarias](#paso-4-eliminación-de-columnas-innecesarias)  
+4. [Resultado final](#-resultado-final)  
+5. [Código completo](#-código-completo)  
+6. [Autor](#-autor)  
 
-
+---
 
 ## **📌 Proceso de limpieza paso a paso**
 
