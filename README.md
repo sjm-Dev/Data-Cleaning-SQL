@@ -1,37 +1,12 @@
 # 📊 Proyecto de Data Cleaning - MySQL
 
-## **Descripción**
-Este proyecto consiste en la limpieza y optimización de una base de datos utilizando SQL.  
-El objetivo es eliminar errores, valores nulos y redundancias para asegurar que los datos sean precisos y listos para análisis.  
-
-**Tecnologías utilizadas:** SQL  
-**Casos de uso:** Preparación de datos para análisis en herramientas como Tableau, Power BI o modelos de Machine Learning.
-
-
-**Objetivo** 
-Realizar **Data Cleaning** en un dataset de **despidos masivos** para mejorar la calidad y confiabilidad de los datos antes de su análisis. Esto asegurará que las visualizaciones y modelos posteriores estén basados en información precisa.
-
-### **Pasos principales:**
-
-1- **Eliminación de duplicados:** Identificación y eliminación de registros repetidos para evitar sesgos en el análisis.
-
-2- **Corrección de valores nulos:** Tratamiento de datos faltantes para completar o eliminar información inconsistente.
-
-3- **Estandarización de datos:** Normalización de formatos en fechas, nombres de empresas e industrias para lograr coherencia.
-
-4- **Eliminación de columnas irrelevantes:** Remoción de datos que no aportan valor al análisis, como identificadores temporales utilizados en depuración
-
-**Resultado:**
-Una **tabla optimizada**, con reducción de inconsistencias y preparada para Análisis Exploratorio de Datos (**EDA**).
-
----
 
 ## 📌 Contenido  
 
 1. [Descripción](#Descripción)  
 2. [Objetivo](#Objetivo)  
 3. [Proceso de limpieza de datos](#Proceso-de-limpieza-paso-a-paso)  
-   - [Paso 1: Eliminación de duplicados](#paso-1-eliminación-de-duplicados)  
+   - [1- Eliminación de Duplicados](#PASO-1:-Eliminación-de-Duplicados)  
    - [Paso 2: Normalización de datos](#paso-2-normalización-de-datos)  
    - [Paso 3: Manejo de valores nulos](#paso-3-manejo-de-valores-nulos)  
    - [Paso 4: Eliminación de columnas innecesarias](#paso-4-eliminación-de-columnas-innecesarias)  
@@ -40,7 +15,19 @@ Una **tabla optimizada**, con reducción de inconsistencias y preparada para An�
 6. [Autor](#-autor)  
 
 ---
+
+## **Descripción**
+Este proyecto consiste en la limpieza y optimización de una base de datos utilizando SQL.  
+El objetivo es eliminar errores, valores nulos y redundancias para asegurar que los datos sean precisos y listos para análisis.  
+
+**Tecnologías utilizadas:** SQL  
+**Casos de uso:** Preparación de datos para análisis en herramientas como Tableau, Power BI o modelos de Machine Learning.
+
+
 ## **Objetivo** 
+Realizar **Data Cleaning** en un dataset de **despidos masivos** para mejorar la calidad y confiabilidad de los datos antes de su análisis. Esto asegurará que las visualizaciones y modelos posteriores estén basados en información precisa.
+
+--- 
 
 ## **Proceso de limpieza paso a paso**
 
