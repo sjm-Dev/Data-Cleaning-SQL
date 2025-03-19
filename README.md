@@ -9,7 +9,7 @@
    - [PASO 1: Eliminación de Duplicados](#paso-1-eliminación-de-duplicados)  
    - [PASO 2: Estandarización de Datos](#paso-2-estandarización-de-datos)  
    - [Paso 3: Manejo de valores nulos](#paso-3-manejo-de-valores-nulos)  
-   - [Paso 4: Eliminación de columnas innecesarias](#paso-4-eliminación-de-columnas-innecesarias)  
+   - [Paso 4: Eliminación de columnas innecesarias](#paso-4-eliminación-de-datos-null-y-columnas-innecesarias)  
 4. [Resultado final](#-resultado-final)  
 5. [Código completo](#-código-completo)  
 6. [Autor](#-autor)  
@@ -184,7 +184,7 @@ Luego de ejecutar `ALTER TABLE`, la columna `date` cambia de tipo `TEXT` a `DATE
 
 ✅ **Resultado:** `date` ahora está en un formato adecuado para operaciones analíticas y reportes. 
 
-## **PASO 3: Manejo de valores nulos**
+## PASO 3: Manejo de valores nulos
 
 En esta etapa, identificamos y tratamos los valores faltantes en la columna `industry`.
 
@@ -204,7 +204,7 @@ Después de aplicar el `UPDATE`, la columna `industry` ha sido actualizada corre
 
 ![image.png](image%2024.png)
 
-### **PASO 4: Eliminación de datos NULL y columnas innecesarias**
+## PASO 4: Eliminación de datos NULL y columnas innecesarias
 
 En esta etapa, refinamos la base de datos eliminando información que no aporta valor significativo para el análisis final.
 
