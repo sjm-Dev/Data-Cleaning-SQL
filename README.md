@@ -40,6 +40,7 @@ Una **tabla optimizada**, con reducci√≥n de inconsistencias y preparada para An√
 6. [Autor](#-autor)  
 
 ---
+## **Objetivo** 
 
 ## **Proceso de limpieza paso a paso**
 
