@@ -7,7 +7,7 @@
 2. [Objetivo](#Objetivo)  
 3. [Proceso de limpieza de datos](#Proceso-de-limpieza-paso-a-paso)  
    - [PASO 1: Eliminación de Duplicados](#paso-1-eliminación-de-duplicados)  
-   - [Paso 2: Normalización de datos](#paso-2-normalización-de-datos)  
+   - [PASO 2: Estandarización de Datos](#paso-2-estandarización-de-datos)  
    - [Paso 3: Manejo de valores nulos](#paso-3-manejo-de-valores-nulos)  
    - [Paso 4: Eliminación de columnas innecesarias](#paso-4-eliminación-de-columnas-innecesarias)  
 4. [Resultado final](#-resultado-final)  
