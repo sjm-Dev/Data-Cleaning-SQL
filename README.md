@@ -22,17 +22,32 @@ ACTUALICÉ HASTA LOS 4 PASOS!!
 
 ---
 
-## **Descripción**
-Este proyecto consiste en la limpieza y optimización de una base de datos utilizando SQL.  
-El objetivo es eliminar errores, valores nulos y redundancias para asegurar que los datos sean precisos y listos para análisis.  
+## Descripción
+Este proyecto muestra cómo **limpiar y preparar una base de datos usando solo SQL**, tal como se hace en escenarios reales de trabajo.  
+El dataset original contenía errores comunes como **duplicados, valores vacíos, formatos inconsistentes y columnas innecesarias**.
 
-**Tecnologías utilizadas:** SQL  
-**Casos de uso:** Preparación de datos para análisis en herramientas como Tableau, Power BI o modelos de Machine Learning.
+Durante el proceso se aplicaron pasos clave como:
+- **Eliminación de duplicados**  
+- **Tratamiento de valores nulos**  
+- **Normalización de datos**  
+- **Reestructuración de la tabla final**  
+
+Con esto, se obtiene un **dataset confiable y ordenado**, listo para usar en herramientas como **Tableau, Power BI o en modelos de Machine Learning**.
+
+🛠️ **Tecnología usada:** `SQL`  
+📊 **Uso práctico:** Dejar los datos **limpios y listos para análisis, visualización o predicción**.
+
 
 
 ## **Objetivo** 
-Realizar **Data Cleaning** en un dataset de **despidos masivos** para mejorar la calidad y confiabilidad de los datos antes de su análisis. Esto asegurará que las visualizaciones y modelos posteriores estén basados en información precisa.
+El objetivo de este proyecto es **mostrar cómo transformar un conjunto de datos desordenado en una base limpia, estructurada y útil para análisis**.
 
+Esto incluye:
+- **Detectar y corregir errores** en los datos  
+- **Estandarizar campos** para lograr consistencia  
+- Asegurar que la tabla final sea **clara, funcional y reutilizable**  
+
+Es un ejemplo práctico de cómo se trabaja con datos reales en cualquier puesto relacionado con **Data Analysis**, **Business Intelligence** o **Data Engineering**.
 --- 
 
 ## **Proceso de limpieza paso a paso**
