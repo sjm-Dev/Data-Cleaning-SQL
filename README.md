@@ -11,13 +11,14 @@
    - [PASO 3: Manejo de valores nulos](#paso-3-manejo-de-valores-nulos)  
    - [PASO 4: Eliminación de datos NULL y columnas innecesarias](#paso-4-eliminación-de-datos-null-y-columnas-innecesarias)  
 4. [Resultado final](#-resultado-final)  
-5. [Autor](#-autor)  
+  
 
+ACTUALICÉ HASTA LOS 4 PASOS!!
+ACTUALICÉ HASTA LOS 4 PASOS!!
 
-INDICE ACTUALICÉ HASTA LOS 4 PASOS!!
-INDICE ACTUALICÉ HASTA LOS 4 PASOS!!
-INDICE ACTUALICÉ HASTA LOS 4 PASOS!!
-INDICE ACTUALICÉ HASTA LOS 4 PASOS!!
+ACTUALICÉ HASTA LOS 4 PASOS!!
+ACTUALICÉ HASTA LOS 4 PASOS!!
+
 
 ---
 
