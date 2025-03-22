@@ -43,11 +43,13 @@ Con esto, se obtiene un **dataset confiable y ordenado**, listo para usar en her
 El objetivo de este proyecto es **mostrar cómo transformar un conjunto de datos desordenado en una base limpia, estructurada y útil para análisis**.
 
 Esto incluye:
-- **Detectar y corregir errores** en los datos  
-- **Estandarizar campos** para lograr consistencia  
-- Asegurar que la tabla final sea **clara, funcional y reutilizable**  
+- **Detectar y corregir errores** en los datos.
+- **Estandarizar campos** para lograr consistencia.  
+- Asegurar que la tabla final sea **clara, funcional y reutilizable**.
+
 
 Es un ejemplo práctico de cómo se trabaja con datos reales en cualquier puesto relacionado con **Data Analysis**, **Business Intelligence** o **Data Engineering**.
+
 --- 
 
 ## **Proceso de limpieza paso a paso**
