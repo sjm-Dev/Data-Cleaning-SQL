@@ -196,7 +196,9 @@ Se identificaron variantes en los nombres de industrias que, aunque diferentes, 
 
 ### Análisis de la columna `country`
 
-Se eliminaron caracteres innecesarios y se estandarizaron los nombres de países para evitar registros duplicados con distintas formas de escritura (por ejemplo: "United States" vs "USA").
+Se eliminaron caracteres innecesarios y se estandarizaron los nombres de países para evitar registros duplicados con distintas formas de escritura.
+
+Por ejemplo: `"United States"` vs `"United States."`
 
 ![Países estandarizados](images/image-17.png)
 
