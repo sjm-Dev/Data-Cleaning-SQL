@@ -247,7 +247,7 @@ Se realizó un `JOIN` entre registros de la misma compañía, copiando el valor 
 
 📌 Este enfoque evita cargar datos arbitrarios y mantiene la lógica interna del dataset.
 
-![JOIN aplicado](images/image22.png)
+![JOIN aplicado](images/image-22.png)
 
 ---
 
