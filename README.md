@@ -312,6 +312,8 @@ Después de aplicar todo el proceso de limpieza y transformación, se obtuvo un 
 ✔ **Mayor calidad y precisión:** Se redujeron valores nulos y se optimizó la estructura general de la base de datos.
 
 📎 **Código completo del proceso:** [`data_cleaning.sql`](https://www.notion.so/Data-Cleaning-MySQL-Full-Project-1ac30b66251980089dffda3ae4cf6f72?pvs=21)
+📎 **Código completo del proceso:** [`data_cleaning.sql`](https://www.notion.so/Data-Cleaning-MySQL-Full-Project-1ac30b66251980089dffda3ae4cf6f72?pvs=21)
+📎 **Código completo del proceso:** [`data_cleaning.sql`](https://www.notion.so/Data-Cleaning-MySQL-Full-Project-1ac30b66251980089dffda3ae4cf6f72?pvs=21)
 
 *Este tipo de limpieza es una etapa clave en cualquier pipeline de datos, y garantiza una base sólida para visualizaciones, reporting o desarrollo de modelos predictivos.*
 
@@ -326,4 +328,4 @@ Aunque el dataset quedó limpio y utilizable, en un entorno real podrían aplica
 - Cruzar el dataset con fuentes externas para completar valores faltantes.  
 - Integrar la limpieza en un pipeline ETL más amplio.
 
-💡 *Este proyecto combina habilidades técnicas en SQL con decisiones de limpieza de datos aplicadas a un caso real.*
+💡 *Una demostración práctica de cómo aplicar SQL para resolver problemas reales de datos, con criterio técnico y atención al detalle.*
