@@ -243,7 +243,7 @@ Primero, se reemplazaron los valores vacíos (cadenas vacías) por `NULL`. Esto 
 
 Luego, se intentó completar los valores `NULL` en `industry` tomando como referencia otras filas de la misma empresa que sí tenían ese dato.
 
-Se realizó un `JOIN` entre registros de la misma compañía, copiando el valor existente de `industry` en los casos donde faltaba.
+Se realizó un `JOIN` entre registros de igual contenido de la columna `company`, copiando el valor existente de `industry` en los casos donde faltaba.
 
 📌 Este enfoque evita cargar datos arbitrarios y mantiene la lógica interna del dataset.
 
@@ -261,7 +261,7 @@ Después de realizar el `JOIN`, se ejecutó un `SELECT` para verificar que los v
 
 ### Resultado final
 
-Tras aplicar el `UPDATE`, la columna `industry` quedó actualizada. Todas las compañías tienen una industria asignada **cuando fue posible inferirla con certeza** a partir de los datos existentes.
+Tras aplicar el `UPDATE`, la columna `industry` quedó actualizada. Todas las compañías, `company`, tienen una industria asignada **cuando fue posible inferirla con certeza** a partir de los datos existentes.
 
 ![Industry final actualizada](images/image-24.png)
 
