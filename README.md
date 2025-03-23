@@ -303,16 +303,27 @@ La columna `row_num` fue creada exclusivamente para fines de depuración durante
 
 ---
 
-## **📊 Resultado Final**
+## 📊 Resultado Final
 
-Después de aplicar el proceso de limpieza y transformación, obtenemos un dataset optimizado para análisis.
+Después de aplicar todo el proceso de limpieza y transformación, se obtuvo un dataset **estructurado, confiable y listo para análisis**.
 
-✔ **Base de datos sin duplicados ni errores:** Se eliminaron inconsistencias y registros redundantes.
+✔ **Sin duplicados ni errores:** Se eliminaron registros redundantes y filas inconsistentes.  
+✔ **Formato homogéneo:** Los datos fueron normalizados y las columnas estandarizadas.  
+✔ **Mayor calidad y precisión:** Se redujeron valores nulos y se optimizó la estructura general de la base de datos.
 
-✔ **Formato homogéneo y estructurado:** Los datos fueron normalizados para facilitar consultas y visualización.
+📎 **Código completo del proceso:** [`data_cleaning.sql`](https://www.notion.so/Data-Cleaning-MySQL-Full-Project-1ac30b66251980089dffda3ae4cf6f72?pvs=21)
 
-✔ **Mayor calidad y confiabilidad:** Se redujo la cantidad de valores nulos y se optimizó la estructura de la base de datos.
+*Este tipo de limpieza es una etapa clave en cualquier pipeline de datos, y garantiza una base sólida para visualizaciones, reporting o desarrollo de modelos predictivos.*
 
-📎 **🔗 Código completo:** [`data_cleaning.sql`](https://www.notion.so/Data-Cleaning-MySQL-Full-Project-1ac30b66251980089dffda3ae4cf6f72?pvs=21)
+---
 
-📌 *Este proceso es fundamental en cualquier análisis de datos, asegurando información precisa y lista para visualización, reporting y modelado predictivo. 🚀*
+## 🧩 Posibles mejoras
+
+Aunque el dataset quedó limpio y utilizable, en un entorno real podrían aplicarse mejoras adicionales como:
+
+- Automatizar procesos con scripts SQL parametrizados.  
+- Validar entradas con reglas de integridad o triggers.  
+- Cruzar el dataset con fuentes externas para completar valores faltantes.  
+- Integrar la limpieza en un pipeline ETL más amplio.
+
+💡 *Este proyecto refleja no solo habilidades técnicas en SQL, sino también criterio analítico y buenas prácticas de trabajo con datos reales.*
