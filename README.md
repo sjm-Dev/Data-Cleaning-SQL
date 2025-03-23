@@ -67,7 +67,7 @@ Esta es una buena práctica común en entornos profesionales de análisis de dat
 
 Se realiza una copia exacta de la estructura y los datos de la tabla `company_layoffs`, creando una nueva tabla llamada `company_layoffs_cleaned`, sobre la cual se aplicarán todas las transformaciones necesarias.
 
-![Copia de tabla](images/creacion_tabla_trabajo.png)
+![Copia de tabla](images/image-2.png)
 
 ### Ventajas de trabajar con una copia
 
