@@ -139,81 +139,87 @@ Resultado final tras eliminar duplicados:
 
 ## **PASO 2: Estandarización de Datos**
 
-### Eliminación de espacios en blanco
+### Limpieza de espacios en blanco — Columna `company`
 
-Análisis de la Columna `company`
+Para garantizar la coherencia en los nombres de las compañías, se aplicó la función `TRIM()`, que elimina los espacios en blanco al inicio y al final de los valores.
 
-Para garantizar coherencia en los nombres de las compañías, se aplica `TRIM()`, que elimina espacios en blanco al inicio y al final de cada valor en la columna `company`. 
+Esto evita inconsistencias como registros duplicados por pequeñas diferencias invisibles (por ejemplo: `"Google "` vs `"Google"`).
 
-- `TRIM()` elimina espacios en blanco (del principio o del final de la columna `company`).
+![Aplicación de TRIM](images/image-11.png)
 
-![image.png](image%2011.png)
+**Estado del dataset tras la estandarización:**
 
-📌 **Estado del Dataset tras la estandarización**
+Luego de aplicar `TRIM()`, los nombres de la columna `company` presentan una mayor uniformidad y calidad para el análisis.
 
-Después de eliminar espacios en blanco y estandarizar los nombres de la columna `company`, el dataset ya presenta una mayor uniformidad y calidad para su análisis.
+![Company limpia](images/image-12.png)
 
-![image.png](image%2012.png)
+---
 
-### Análisis de la Columna `industry`
+### Análisis de la columna `industry`
 
-### **Problemas detectados en la columna `industry`**
+#### Problema 1: Valores vacíos o `NULL`
 
-**1️⃣ Valores vacíos: Algunas filas tienen `NULL`, lo que puede afectar el análisis. (VACIOS O NULL?)**
+Se detectaron varias filas con valores faltantes en la columna `industry`. Esto puede afectar análisis agrupados o categorizaciones por rubro.
 
-📷 **Ejemplo de valores nulos en `industry`** 
+📷 Ejemplo de registros con valores nulos:
 
-![image.png](image%2013.png)
-
-![image.png](image%2014.png)
+![NULL en industry 1](images/null_industry_1.png)  
+![NULL en industry 2](images/null_industry_2.png)
 
 **Solución aplicada:**
 
-- Se completan valores `NULL` en `industry` utilizando información de la misma empresa cuando está disponible. En este caso para `company` se tiene la industria `Travel` . Por lo que se completa con ese mismo dato a la fila con valor **VACÍO**.
-- En caso de no contar con datos suficientes, los valores permanecen como `NULL` para evitar asumir información incorrecta.
+- Se completaron los valores `NULL` utilizando información de otras filas de la misma empresa (por ejemplo: si `Airbnb` tiene "Travel" en otra fila, se replica ese valor).
+- Si no se encontró información confiable, se dejó el campo como `NULL` para evitar introducir datos incorrectos.
 
-✔ **Beneficio:** Se mejora la calidad del dataset, reduciendo la pérdida de datos sin introducir sesgos.
+✔ **Resultado:** Reducción de valores nulos sin forzar datos ni introducir sesgos.
 
-2️⃣ **Inconsistencias en los nombres**
+---
 
-Existen variaciones en la misma industria (ej. distintas versiones de "Crypto"), lo que requiere normalización.
+#### Problema 2: Inconsistencias en los nombres
 
-**📌 Antes de la Estandarización de `industry`**
+Se identificaron variantes en los nombres de industrias que, aunque diferentes, representaban la misma categoría (ej: "Crypto", "crypto", "Cryptocurrency").
 
-🔍 Se observan valores inconsistentes en la columna `industry`, con variaciones en nombres que deberían representar la misma categoría.
+**Antes de la estandarización:**
 
-![image.png](image%2015.png)
+![Industry inconsistente](images/industry_inconsistente.png)
 
-**📌 Después de la estandarización de `industry`**
+**Después de la estandarización:**
 
-✅ Se unificaron los nombres de las industrias para evitar inconsistencias y mejorar la calidad del análisis. Ahora, todas las variaciones de una misma categoría se agrupan bajo un único nombre estándar.
+![Industry limpia](images/industry_limpia.png)
 
-![image.png](image%2016.png)
+✅ Todos los valores fueron unificados bajo un criterio común para garantizar consistencia en los análisis.
 
-### Análisis de la Columna `country`
+---
 
-✅ Se eliminaron caracteres innecesarios y se unificó la nomenclatura de los países para evitar registros inconsistentes.
+### Análisis de la columna `country`
 
-![image.png](image%2017.png)
+Se eliminaron caracteres innecesarios y se estandarizaron los nombres de países para evitar registros duplicados con distintas formas de escritura (por ejemplo: "United States" vs "USA").
 
-### **📌 Análisis de la Columna `date`**
+![Países estandarizados](images/country_cleaned.png)
 
-- La columna `date` estaba almacenada como texto, lo que dificultaba su manipulación y análisis.
-- Se convirtió al formato `DATE` utilizando `STR_TO_DATE()`, permitiendo operaciones como filtrado por rango de fechas o cálculos temporales.
+---
 
-📷 **Antes de la conversión (`company_layoffs_cleaned2`):**
+### Conversión de la columna `date` a formato fecha
 
-![image.png](image%2018.png)
+Originalmente, la columna `date` estaba en formato `TEXT`, lo que impedía realizar operaciones como filtrado por fechas o análisis temporal.
 
-📷 **Después del `UPDATE` en `date` :**
+Se utilizó la función `STR_TO_DATE()` para convertir los valores y posteriormente se cambió el tipo de dato con `ALTER TABLE`.
 
-![image.png](image%2019.png)
+📷 **Antes de la conversión:**
 
-Luego de ejecutar `ALTER TABLE`, la columna `date` cambia de tipo `TEXT` a `DATE`, asegurando su correcto tratamiento en consultas temporales y facilitando análisis como filtros por fecha o cálculos de intervalos.
+![Date antes](images/date_before.png)
 
-![image.png](image%2020.png)
+📷 **Después del `UPDATE`:**
 
-✅ **Resultado:** `date` ahora está en un formato adecuado para operaciones analíticas y reportes. 
+![Date después del update](images/date_update.png)
+
+📷 **Cambio de tipo de columna:**
+
+![Tipo cambiado a DATE](images/date_altered.png)
+
+✅ **Resultado final:** `date` ahora está en un formato adecuado para análisis cronológicos y reportes dinámicos.
+
+
 
 ## PASO 3: Manejo de valores nulos
 
