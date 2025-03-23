@@ -198,7 +198,7 @@ Se identificaron variantes en los nombres de industrias que, aunque diferentes, 
 
 Se eliminaron caracteres innecesarios y se estandarizaron los nombres de países para evitar registros duplicados con distintas formas de escritura (por ejemplo: "United States" vs "USA").
 
-![Países estandarizados](images/country_cleaned.png)
+![Países estandarizados](images/image-17.png)
 
 ---
 
