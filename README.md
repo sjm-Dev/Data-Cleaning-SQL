@@ -88,12 +88,11 @@ Los datos duplicados pueden distorsionar análisis y visualizaciones, generando 
 
 Visualización de filas duplicadas identificadas:
 
-![Duplicados identificados](images/duplicados_identificados.png)
+![Duplicados identificados](images/image-3.png)
 
 Ejemplo específico de duplicados para la compañía `Oda`:
 
-![Duplicados Oda - Parte 1](images/duplicados_oda_1.png)  
-![Duplicados Oda - Parte 2](images/duplicados_oda_2.png)
+![Duplicados Oda - Parte 1](images/image-4.png)  
 
 ---
 
