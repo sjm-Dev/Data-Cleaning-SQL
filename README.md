@@ -12,14 +12,6 @@
    - [PASO 4: Eliminación de datos NULL y columnas innecesarias](#paso-4-eliminación-de-datos-null-y-columnas-innecesarias)  
 4. [Resultado final](#-resultado-final)  
   
-
-ACTUALICÉ HASTA LOS 4 PASOS!!
-ACTUALICÉ HASTA LOS 4 PASOS!!
-
-ACTUALICÉ HASTA LOS 4 PASOS!!
-ACTUALICÉ HASTA LOS 4 PASOS!!
-
-
 ---
 
 ## Descripción
@@ -64,7 +56,7 @@ A continuación se muestra una vista previa del dataset recibido:
 
 El conjunto de datos original cuenta con una cantidad significativa de registros y columnas, lo cual hace aún más importante asegurar su calidad antes de analizarlo:
 
-![Dimensión del dataset](image%201.png)
+![Vista del dataset original](images/image-1.png)
 
 ---
 
