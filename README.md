@@ -145,7 +145,7 @@ Para garantizar la coherencia en los nombres de las compañías, se aplicó la f
 
 Esto evita inconsistencias como registros duplicados por pequeñas diferencias invisibles:
 
-Por ejemplo: `" E. Inc"` vs `"E. Inc"`
+Por ejemplo: `" E Inc."` vs `"E Inc."`
 
 ![Aplicación de TRIM](images/image-11.png)
 
@@ -165,8 +165,8 @@ Se detectaron varias filas con valores faltantes en la columna `industry`. Esto 
 
 📷 Ejemplo de registros con valores nulos:
 
-![NULL en industry 1](images/null_industry_1.png)  
-![NULL en industry 2](images/null_industry_2.png)
+![NULL en industry 1](images/image-13.png)  
+![NULL en industry 2](images/image-14.png)
 
 **Solución aplicada:**
 
