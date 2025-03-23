@@ -211,7 +211,8 @@ Originalmente, la columna `date` estaba en formato `TEXT`, lo que impedía reali
 Se utilizó la función `STR_TO_DATE()` para convertir los valores y posteriormente se cambió el tipo de dato con `ALTER TABLE`.
 
 📷 **Conversión:**
-En la columna izquierda se muestra el formato por defecto de la variable `date`, mientras que en la columna de al lado se muestra la conversión hecha:
+En la columna izquierda se muestra el formato por defecto de la variable `date`, mientras que en la columna de al lado se muestra la conversión hecha.
+
 ![Date antes](images/image-18.png)
 
 📷 **Después del `UPDATE`:**
@@ -220,7 +221,7 @@ En la columna izquierda se muestra el formato por defecto de la variable `date`,
 
 📷 **Cambio de tipo de columna:**
 
-![Tipo cambiado a DATE](images/date_altered.png)
+![Tipo cambiado a DATE](images/image-20.png)
 
 ✅ **Resultado final:** `date` ahora está en un formato adecuado para análisis cronológicos y reportes dinámicos.
 
