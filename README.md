@@ -229,23 +229,42 @@ En la columna izquierda se muestra el formato por defecto de la variable `date`,
 
 ## PASO 3: Manejo de valores nulos
 
-En esta etapa, identificamos y tratamos los valores faltantes en la columna `industry`.
+En esta etapa se identificaron y trataron los valores faltantes en la columna `industry`, con el objetivo de mejorar la calidad general del dataset y facilitar consultas más limpias.
 
-- **Valores VACÍOS en `industry`**: Se reemplazan los valores vacíos con `NULL`, ya que esto permite un mejor manejo de datos en consultas SQL posteriores.
+### Reemplazo de valores vacíos
 
-![image.png](image%2021.png)
+Primero, se reemplazaron los valores vacíos (cadenas vacías) por `NULL`. Esto permite manejar de forma más eficiente los datos faltantes en SQL, ya que las funciones y filtros están preparados para interpretar `NULL`, pero no espacios vacíos.
 
-Para completar los valores faltantes en la columna `industry`, realizamos un **JOIN** con los registros existentes de la misma compañía. De esta forma, si una empresa ya tiene una industria asociada en otra fila, se copia ese valor en las filas donde `industry` es `NULL`.
+![Valores vacíos a NULL](images/industry_blank_to_null.png)
 
-![image.png](image%2022.png)
+---
 
-Después de realizar el `JOIN`, ejecutamos un `SELECT` para comprobar que los valores de la columna `industry` han sido correctamente asignados a las compañías que tenían valores nulos.
+### Completado de valores nulos mediante JOIN
 
-![image.png](image%2023.png)
+Luego, se intentó completar los valores `NULL` en `industry` tomando como referencia otras filas de la misma empresa que sí tenían ese dato.
 
-Después de aplicar el `UPDATE`, la columna `industry` ha sido actualizada correctamente. Ahora, todas las compañías tienen una industria asignada cuando era posible inferirla a partir de registros existentes.
+Se realizó un `JOIN` entre registros de la misma compañía, copiando el valor existente de `industry` en los casos donde faltaba.
 
-![image.png](image%2024.png)
+📌 Este enfoque evita cargar datos arbitrarios y mantiene la lógica interna del dataset.
+
+![JOIN aplicado](images/join_completado_industry.png)
+
+---
+
+### Verificación del resultado
+
+Después de realizar el `JOIN`, se ejecutó un `SELECT` para verificar que los valores hayan sido correctamente completados en las filas correspondientes.
+
+![Verificación del SELECT](images/verificacion_join.png)
+
+---
+
+### Resultado final
+
+Tras aplicar el `UPDATE`, la columna `industry` quedó actualizada. Todas las compañías tienen una industria asignada **cuando fue posible inferirla con certeza** a partir de los datos existentes.
+
+![Industry final actualizada](images/industry_actualizada.png)
+
 
 ## PASO 4: Eliminación de datos NULL y columnas innecesarias
 
