@@ -5,7 +5,7 @@
 
 1. [Descripción](#Descripción)  
 2. [Objetivo](#Objetivo)  
-3. [Proceso de limpieza de datos](#Proceso-de-limpieza-paso-a-paso)  
+3. [Proceso de limpieza paso a paso](#Proceso-de-limpieza-paso-a-paso)  
    - [PASO 1: Eliminación de Duplicados](#paso-1-eliminación-de-duplicados)  
    - [PASO 2: Estandarización de Datos](#paso-2-estandarización-de-datos)  
    - [PASO 3: Manejo de valores nulos](#paso-3-manejo-de-valores-nulos)  
@@ -52,7 +52,7 @@ Es un ejemplo práctico de cómo se trabaja con datos reales en cualquier puesto
 
 --- 
 
-## 🧼 Proceso de limpieza paso a paso
+## Proceso de limpieza paso a paso
 
 ### 📂 Dataset original
 
