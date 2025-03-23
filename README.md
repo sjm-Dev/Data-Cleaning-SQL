@@ -79,54 +79,57 @@ Se realiza una copia exacta de la estructura y los datos de la tabla `company_la
 
 ## PASO 1: Eliminación de Duplicados
 
-Los datos duplicados pueden distorsionar análisis y visualizaciones, generando **resultados incorrectos**. Para evitar esto:
+Los datos duplicados pueden distorsionar análisis y visualizaciones, generando **resultados incorrectos o inconsistencias**. Para evitar esto, el primer paso del proceso consistió en identificar y eliminar registros repetidos.
 
-- Se usa `ROW_NUMBER()` para **identificar registros repetidos** basados en columnas clave.
-- El obetivo es eliminar registros innecesarios con `row_num > 1`, manteniendo solo una versión de cada fila.
+### Identificación de duplicados
 
-Muestra de las filas duplicadas:
+- Se utilizó la función `ROW_NUMBER()` para asignar un número secuencial a cada fila, agrupando por columnas clave.
+- El objetivo fue detectar registros duplicados y conservar solo uno, eliminando aquellos con `row_num > 1`.
 
-![image.png](image%203.png)
+Visualización de filas duplicadas identificadas:
 
-Ejemplo de duplicados by “company = ‘Oda’
+![Duplicados identificados](images/duplicados_identificados.png)
 
-![image.png](image%204.png)
+Ejemplo específico de duplicados para la compañía `Oda`:
 
-![image.png](image%205.png)
+![Duplicados Oda - Parte 1](images/duplicados_oda_1.png)  
+![Duplicados Oda - Parte 2](images/duplicados_oda_2.png)
 
-### **🚨 Problema al eliminar duplicados**
+---
 
-Al intentar eliminar duplicados usando `ROW_NUMBER()` en una CTE, MySQL arrojó el siguiente error:
+### Dificultades al eliminar duplicados
 
-📌 **Error 1288:** *"The target table of the DELETE is not updatable."*
+Al intentar realizar la eliminación directamente desde una CTE que contenía `ROW_NUMBER()`, MySQL devolvió el siguiente error:
 
-📷 **Salida del error:**
+**Error 1288:**  
+*"The target table of the DELETE is not updatable."*
 
-![image.png](image%206.png)
+![Error 1288](images/error_delete_cte.png)
 
-🔹 **Causa:** MySQL no permite ejecutar `DELETE` directamente sobre una CTE.
+**Causa:** MySQL no permite ejecutar un `DELETE` directamente sobre una tabla derivada o CTE (Common Table Expression).
 
-🔹 **Solución aplicada:** En lugar de eliminar desde la CTE, se creó una nueva tabla (`company_layoffs_cleaned2`) con los datos depurados.
+**Solución:**  
+- Se creó una nueva tabla llamada `company_layoffs_cleaned2` con los mismos datos.
+- Se agregó la columna `row_num` como tipo `INT` directamente a esa nueva tabla.
+- Esto permitió ejecutar la sentencia `DELETE` sin restricciones.
 
-**Aún así el problema persistió. A partir de la tabla (company_layoffs_cleaned) se tuvo que generar una nueva (company_layoffs_cleaned2), agregarle la columna “row_num” como INT y así hacer el borrado de los duplicados:**
+![Nueva tabla creada](images/creacion_cleaned2.png)  
+![Código corregido y ejecución](images/delete_exitoso.png)
 
-![image.png](image%207.png)
+---
 
-📷 **Código corregido y ejecución exitosa** *(Si tienes una imagen del código funcionando, agrégala)*
+### Eliminación final de duplicados
 
-![image.png](image%208.png)
+Una vez creada `company_layoffs_cleaned2`, se eliminaron todas las filas con `row_num > 1`.
 
-**📌 Duplicados a eliminar en la nueva Tabla**
+Visualización previa a la eliminación:
 
-Luego de crear `company_layoffs_cleaned2`, identificamos los registros duplicados con `row_num > 1`, que serán eliminados en el siguiente paso.
+![Registros a eliminar](images/duplicados_a_eliminar.png)
 
-![image.png](image%209.png)
+Resultado final tras eliminar duplicados:
 
-📌 **Datos después de eliminar duplicados**
+![Dataset sin duplicados](images/dataset_sin_duplicados.png)
 
-Tras aplicar la eliminación de registros con `row_num > 1`, obtenemos una tabla sin filas duplicadas, lista para los siguientes pasos de limpieza.
-
-![image.png](image%2010.png)
 
 ## **PASO 2: Estandarización de Datos**
 
