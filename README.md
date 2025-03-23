@@ -19,7 +19,8 @@ El objetivo fue aplicar buenas prácticas de depuración, estandarización y val
    - [PASO 2: Estandarización de Datos](#paso-2-estandarización-de-datos)  
    - [PASO 3: Manejo de valores nulos](#paso-3-manejo-de-valores-nulos)  
    - [PASO 4: Eliminación de datos NULL y columnas innecesarias](#paso-4-eliminación-de-datos-null-y-columnas-innecesarias)  
-4. [Resultado final](#-resultado-final)  
+4. [Resultado final](#-resultado-final)
+5. [Posibles Mejoras](#-posibles-mejoras)  
   
 ---
 
