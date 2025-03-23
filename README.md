@@ -1,7 +1,5 @@
 # 📊 Proyecto de Data Cleaning - MySQL
 
----
-
 ## Sobre el proyecto
 
 Este proyecto fue desarrollado como una práctica completa de limpieza de datos usando SQL, simulando un escenario real de trabajo con información cruda.  
