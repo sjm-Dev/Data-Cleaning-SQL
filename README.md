@@ -117,14 +117,10 @@ Para resolver este inconveniente:
 
 - Se creó una nueva tabla llamada `company_layoffs_cleaned2`, replicando los datos existentes.
 - A esta tabla se le agregó manualmente la columna `row_num` como un campo de tipo `INT`.
+- Con esta estructura, será posible ejecutar el `DELETE` sin restricciones y eliminar correctamente los registros duplicados.
 
 ![Codigo tabla nueva](images/image-8.png)
-
-![Tabla nueva](images/image-9.png)
-
-✅ Con esta estructura, fue posible ejecutar el `DELETE` sin restricciones y eliminar correctamente los registros duplicados.
   
-
 ---
 
 ### Eliminación final de duplicados
@@ -133,11 +129,12 @@ Una vez creada `company_layoffs_cleaned2`, se eliminaron todas las filas con `ro
 
 Visualización previa a la eliminación:
 
-![Registros a eliminar](images/duplicados_a_eliminar.png)
+![Registros a eliminar](images/image-9.png)
 
 Resultado final tras eliminar duplicados:
 
-![Dataset sin duplicados](images/dataset_sin_duplicados.png)
+![Dataset sin duplicados](images/image-10.png)
+
 
 
 ## **PASO 2: Estandarización de Datos**
