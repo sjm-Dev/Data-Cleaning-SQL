@@ -326,4 +326,4 @@ Aunque el dataset quedó limpio y utilizable, en un entorno real podrían aplica
 - Cruzar el dataset con fuentes externas para completar valores faltantes.  
 - Integrar la limpieza en un pipeline ETL más amplio.
 
-💡 *Este proyecto refleja no solo habilidades técnicas en SQL, sino también criterio analítico y buenas prácticas de trabajo con datos reales.*
+💡 *Este proyecto combina habilidades técnicas en SQL con decisiones de limpieza de datos aplicadas a un caso real.*
