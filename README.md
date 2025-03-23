@@ -212,11 +212,11 @@ Se utilizó la función `STR_TO_DATE()` para convertir los valores y posteriorme
 
 📷 **Antes de la conversión:**
 
-![Date antes](images/date_before.png)
+![Date antes](images/image-18.png)
 
 📷 **Después del `UPDATE`:**
 
-![Date después del update](images/date_update.png)
+![Date después del update](images/image-19.png)
 
 📷 **Cambio de tipo de columna:**
 
