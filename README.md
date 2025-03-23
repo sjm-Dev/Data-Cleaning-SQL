@@ -144,7 +144,7 @@ Resultado final tras eliminar duplicados:
 Para garantizar la coherencia en los nombres de las compañías, se aplicó la función `TRIM()`, que elimina los espacios en blanco al inicio y al final de los valores.
 
 Esto evita inconsistencias como registros duplicados por pequeñas diferencias invisibles:
-Por ejemplo: `" E. Inc"` vs `"E. Inc"`
+ Por ejemplo: `" E. Inc"` vs `"E. Inc"`
 
 ![Aplicación de TRIM](images/image-11.png)
 
