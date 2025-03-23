@@ -1,5 +1,16 @@
 # 📊 Proyecto de Data Cleaning - MySQL
 
+---
+
+## Sobre el proyecto
+
+Este proyecto fue desarrollado como una práctica completa de limpieza de datos usando SQL, simulando un escenario real de trabajo con información cruda.  
+El objetivo fue aplicar buenas prácticas de depuración, estandarización y validación, con foco en la calidad y utilidad de los datos finales.
+
+🔗 **Código completo del proceso:** [`data_cleaning.sql`](./data_cleaning.sql)
+
+---
+
 
 ## 📌 Contenido  
 
@@ -311,11 +322,9 @@ Después de aplicar todo el proceso de limpieza y transformación, se obtuvo un 
 ✔ **Formato homogéneo:** Los datos fueron normalizados y las columnas estandarizadas.  
 ✔ **Mayor calidad y precisión:** Se redujeron valores nulos y se optimizó la estructura general de la base de datos.
 
-📎 **Código completo del proceso:** [`data_cleaning.sql`](https://www.notion.so/Data-Cleaning-MySQL-Full-Project-1ac30b66251980089dffda3ae4cf6f72?pvs=21)
-📎 **Código completo del proceso:** [`data_cleaning.sql`](https://www.notion.so/Data-Cleaning-MySQL-Full-Project-1ac30b66251980089dffda3ae4cf6f72?pvs=21)
-📎 **Código completo del proceso:** [`data_cleaning.sql`](https://www.notion.so/Data-Cleaning-MySQL-Full-Project-1ac30b66251980089dffda3ae4cf6f72?pvs=21)
-
 *Este tipo de limpieza es una etapa clave en cualquier pipeline de datos, y garantiza una base sólida para visualizaciones, reporting o desarrollo de modelos predictivos.*
+
+📎 **Código completo del proceso:** [`data_cleaning.sql`](https://www.notion.so/Data-Cleaning-MySQL-Full-Project-1ac30b66251980089dffda3ae4cf6f72?pvs=21)
 
 ---
 
