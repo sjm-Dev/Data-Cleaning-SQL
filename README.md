@@ -52,31 +52,38 @@ Es un ejemplo práctico de cómo se trabaja con datos reales en cualquier puesto
 
 --- 
 
-## **Proceso de limpieza paso a paso**
+## 🧼 Proceso de limpieza paso a paso
 
-Dataset original:
+### 📂 Dataset original
 
-![image.png](image.png)
+A continuación se muestra una vista previa del dataset recibido:
 
-Dimensión del dataset original:
+![Vista del dataset](image.png)
 
-![image.png](image%201.png)
+### 📏 Dimensión del dataset
 
-## **Creación de una tabla de trabajo**
+El conjunto de datos original cuenta con una cantidad significativa de registros y columnas, lo cual hace aún más importante asegurar su calidad antes de analizarlo:
 
-Antes de comenzar la limpieza, se crea una **copia de la tabla original** para evitar modificar los datos originales y conservar un respaldo en caso de errores.
+![Dimensión del dataset](image%201.png)
 
-Se copia la estructura y datos de `company_layoffs` a `company_layoffs_cleaned` para realizar cambios sin afectar el dataset base.
+---
 
-![image.png](image%202.png)
+## 🛠️ Creación de una tabla de trabajo
 
-Esto permite:
+Antes de iniciar el proceso de limpieza, se crea una **tabla de trabajo** a partir del dataset original.  
+Esta es una buena práctica común en entornos reales de análisis de datos, ya que permite trabajar de forma segura y ordenada.
 
-✅ Mantener la fuente de datos intacta.
+Se realiza una copia exacta de la estructura y los datos de la tabla `company_layoffs`, creando una nueva tabla llamada `company_layoffs_cleaned`, sobre la cual se aplicarán todas las transformaciones y limpiezas necesarias.
 
-✅ Probar diferentes técnicas de limpieza sin riesgo.
+![Copia de tabla](image%202.png)
 
-✅ Revertir cambios si es necesario.
+### 🔒 Ventajas de trabajar con una copia
+
+✅ **Preservar la fuente de datos original** ante cualquier error o pérdida de información  
+✅ **Experimentar con distintas técnicas de limpieza** sin afectar el dataset base  
+✅ **Permitir retrocesos y ajustes rápidos** si se detectan problemas durante el proceso
+
+---
 
 ## PASO 1: Eliminación de Duplicados
 
