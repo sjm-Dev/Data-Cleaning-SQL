@@ -166,6 +166,7 @@ Se detectaron varias filas con valores faltantes en la columna `industry`. Esto 
 📷 Ejemplo de registros con valores nulos:
 
 ![NULL en industry 1](images/image-13.png)  
+
 ![NULL en industry 2](images/image-14.png)
 
 **Solución aplicada:**
@@ -183,11 +184,11 @@ Se identificaron variantes en los nombres de industrias que, aunque diferentes, 
 
 **Antes de la estandarización:**
 
-![Industry inconsistente](images/industry_inconsistente.png)
+![Industry inconsistente](images/image-15.png)
 
 **Después de la estandarización:**
 
-![Industry limpia](images/industry_limpia.png)
+![Industry limpia](images/image-16.png)
 
 ✅ Todos los valores fueron unificados bajo un criterio común para garantizar consistencia en los análisis.
 
