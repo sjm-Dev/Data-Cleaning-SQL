@@ -272,13 +272,13 @@ En esta etapa, se refina el dataset eliminando información que no aporta valor 
 
 ---
 
-### Eliminación de filas con datos faltantes — `total_laid_off` y `percentage_laid_off`
+### Eliminación de filas con datos faltantes `total_laid_off` y `percentage_laid_off` (condición 'AND')
 
 Se eliminaron todas las filas donde las columnas `total_laid_off` y `percentage_laid_off` estaban vacías. Aunque podrían haberse conservado, su ausencia genera incertidumbre en el análisis y puede distorsionar los resultados.
 
 Antes de la eliminación de filas nulas:
 ![Filas con valores nulos](images/image-25.png)
-
+	
 Luego de la eliminación de filas nulas:
 ![Filas sin valores nulos](images/image-26.png)
 
@@ -288,7 +288,6 @@ Luego de la eliminación de filas nulas:
 - ✅ **Datos incompletos y riesgo de sesgo:** Estas variables son clave para entender el impacto de los despidos. Mantenerlas vacías debilita cualquier análisis basado en ellas.
 - ✅ **Imputación poco confiable:** No hay suficiente contexto para completar los valores sin alterar la integridad del dataset.
 - ✅ **Impacto negativo en visualizaciones y modelos:** Algunos dashboards o modelos de Machine Learning no manejan bien los valores `NULL`, lo que puede generar errores o resultados inconsistentes.
-
 
 ---
 
@@ -301,7 +300,6 @@ La columna `row_num` fue creada exclusivamente para fines de depuración durante
 - ✅ **Evitar redundancia:** No aporta información analítica relevante.
 - ✅ **Reducir tamaño y limpiar estructura:** Eliminar columnas innecesarias mejora el rendimiento de consultas y simplifica la visualización.
 - ✅ **Facilita la exportación a otras herramientas:** Un dataset más liviano es más eficiente para trabajar en Tableau, Power BI, Pandas, etc.
-
 
 ---
 
