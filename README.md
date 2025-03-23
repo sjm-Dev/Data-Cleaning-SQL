@@ -60,20 +60,20 @@ El conjunto de datos original cuenta con una cantidad significativa de registros
 
 ---
 
-## 🛠️ Creación de una tabla de trabajo
+## Creación de una tabla de trabajo
 
 Antes de iniciar el proceso de limpieza, se crea una **tabla de trabajo** a partir del dataset original.  
-Esta es una buena práctica común en entornos reales de análisis de datos, ya que permite trabajar de forma segura y ordenada.
+Esta es una buena práctica común en entornos profesionales de análisis de datos, ya que permite trabajar de forma segura, ordenada y sin comprometer la información original.
 
-Se realiza una copia exacta de la estructura y los datos de la tabla `company_layoffs`, creando una nueva tabla llamada `company_layoffs_cleaned`, sobre la cual se aplicarán todas las transformaciones y limpiezas necesarias.
+Se realiza una copia exacta de la estructura y los datos de la tabla `company_layoffs`, creando una nueva tabla llamada `company_layoffs_cleaned`, sobre la cual se aplicarán todas las transformaciones necesarias.
 
-![Copia de tabla](image%202.png)
+![Copia de tabla](images/creacion_tabla_trabajo.png)
 
-### 🔒 Ventajas de trabajar con una copia
+### Ventajas de trabajar con una copia
 
-✅ **Preservar la fuente de datos original** ante cualquier error o pérdida de información  
-✅ **Experimentar con distintas técnicas de limpieza** sin afectar el dataset base  
-✅ **Permitir retrocesos y ajustes rápidos** si se detectan problemas durante el proceso
+- **Preservar la fuente de datos original** ante cualquier error o pérdida de información.  
+- **Probar distintas técnicas de limpieza** sin afectar el dataset base.  
+- **Permitir retrocesos y ajustes rápidos** si se detectan problemas durante el proceso.
 
 ---
 
