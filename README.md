@@ -227,7 +227,7 @@ En la columna izquierda se muestra el formato por defecto de la variable `date`,
 
 
 
-## PASO 3: Manejo de valores nulos
+## PASO 3: Manejo de valores vacíos
 
 En esta etapa se identificaron y trataron los valores faltantes en la columna `industry`, con el objetivo de mejorar la calidad general del dataset y facilitar consultas más limpias.
 
@@ -236,8 +236,6 @@ En esta etapa se identificaron y trataron los valores faltantes en la columna `i
 ### Reemplazo de valores vacíos
 
 Primero, se reemplazaron los valores vacíos (cadenas vacías) por `NULL`. Esto permite manejar de forma más eficiente los datos faltantes en SQL, ya que las funciones y filtros están preparados para interpretar `NULL`, pero no espacios vacíos.
-
-![JOIN aplicado](images/image22.png)
 
 ---
 
@@ -249,7 +247,7 @@ Se realizó un `JOIN` entre registros de la misma compañía, copiando el valor 
 
 📌 Este enfoque evita cargar datos arbitrarios y mantiene la lógica interna del dataset.
 
-
+![JOIN aplicado](images/image22.png)
 
 ---
 
@@ -257,7 +255,7 @@ Se realizó un `JOIN` entre registros de la misma compañía, copiando el valor 
 
 Después de realizar el `JOIN`, se ejecutó un `SELECT` para verificar que los valores hayan sido correctamente completados en las filas correspondientes.
 
-![Verificación del SELECT](images/verificacion_join.png)
+![Verificación del SELECT](images/image-23.png)
 
 ---
 
@@ -265,7 +263,7 @@ Después de realizar el `JOIN`, se ejecutó un `SELECT` para verificar que los v
 
 Tras aplicar el `UPDATE`, la columna `industry` quedó actualizada. Todas las compañías tienen una industria asignada **cuando fue posible inferirla con certeza** a partir de los datos existentes.
 
-![Industry final actualizada](images/industry_actualizada.png)
+![Industry final actualizada](images/image-24.png)
 
 
 ## PASO 4: Eliminación de datos NULL y columnas innecesarias
