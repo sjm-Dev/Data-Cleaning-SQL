@@ -235,7 +235,7 @@ En esta etapa se identificaron y trataron los valores faltantes en la columna `i
 
 Primero, se reemplazaron los valores vacíos (cadenas vacías) por `NULL`. Esto permite manejar de forma más eficiente los datos faltantes en SQL, ya que las funciones y filtros están preparados para interpretar `NULL`, pero no espacios vacíos.
 
-![Valores vacíos a NULL](images/industry_blank_to_null.png)
+![Valores vacíos a NULL](images/image-21.png)
 
 ---
 
@@ -247,7 +247,7 @@ Se realizó un `JOIN` entre registros de la misma compañía, copiando el valor 
 
 📌 Este enfoque evita cargar datos arbitrarios y mantiene la lógica interna del dataset.
 
-![JOIN aplicado](images/join_completado_industry.png)
+![JOIN aplicado](images/image-22.png)
 
 ---
 
