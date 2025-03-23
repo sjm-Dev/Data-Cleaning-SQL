@@ -261,42 +261,45 @@ Después de realizar el `JOIN`, se ejecutó un `SELECT` para verificar que los v
 
 ### Resultado final
 
-Tras aplicar el `UPDATE`, la columna `industry` quedó actualizada. Todas las compañías, `company`, tienen una industria asignada **cuando fue posible inferirla con certeza** a partir de los datos existentes.
+Tras aplicar el `UPDATE`, la columna `industry` quedó actualizada. Todas las compañías, `company`, tienen una industria asignada **cuando fue posible inferirla con certeza** a partir de los datos existentes. En este caso, lo que se hizo con el `JOIN` es que para las filas de la companía `Airbnb` se asigna la misma industria `Travel`.
 
 ![Industry final actualizada](images/image-24.png)
 
 
 ## PASO 4: Eliminación de datos NULL y columnas innecesarias
 
-En esta etapa, refinamos la base de datos eliminando información que no aporta valor significativo para el análisis final.
+En esta etapa, se refina el dataset eliminando información que no aporta valor al análisis final. Esto ayuda a mejorar la calidad, la eficiencia y la interpretabilidad del conjunto de datos.
 
-E**liminación de datos NULL ( `total_laid_off` y `percentage_laid_off`):** Se eliminan las filas donde `total_laid_off` y `percentage_laid_off` no contienen datos. Aunque podríamos conservarlas, su ausencia genera incertidumbre en el análisis y puede afectar la calidad de las conclusiones.
+---
 
-![image.png](image%2025.png)
+### Eliminación de filas con datos faltantes — `total_laid_off` y `percentage_laid_off`
 
-### **📌 Razones para eliminar estas filas**
+Se eliminaron todas las filas donde las columnas `total_laid_off` y `percentage_laid_off` estaban vacías. Aunque podrían haberse conservado, su ausencia genera incertidumbre en el análisis y puede distorsionar los resultados.
 
-✅ **Datos incompletos y sesgo en el análisis:** La falta de valores en variables clave como `total_laid_off` y `percentage_laid_off` impide obtener una visión clara del impacto de los despidos en cada empresa. Si estas filas permanecen, podrían generar sesgos o interpretaciones erróneas.
+![Filas con valores nulos](images/image-25.png)
 
-✅ **Dificultad para la imputación:** No contamos con información suficiente para completar estos datos de manera confiable. Métodos como la imputación por promedio o mediana podrían distorsionar los resultados.
+#### ¿Por qué eliminarlas?
 
-✅ **Impacto en visualizaciones y modelos predictivos:** Mantener datos nulos en métricas clave podría afectar gráficos, dashboards y modelos de Machine Learning, ya que algunas herramientas no manejan bien los valores faltantes.
+- ✅ **Datos incompletos y riesgo de sesgo:** Estas variables son clave para entender el impacto de los despidos. Mantenerlas vacías debilita cualquier análisis basado en ellas.
+- ✅ **Imputación poco confiable:** No hay suficiente contexto para completar los valores sin alterar la integridad del dataset.
+- ✅ **Impacto negativo en visualizaciones y modelos:** Algunos dashboards o modelos de Machine Learning no manejan bien los valores `NULL`, lo que puede generar errores o resultados inconsistentes.
 
-### **Eliminación de la columna `row_num`**
+![Filas sin valores nulos](images/image-26.png)
 
-La columna `row_num` fue utilizada exclusivamente para depuración y ordenamiento temporal durante la limpieza de datos.
+---
 
-En la versión final del dataset, ya no aporta información relevante para el análisis.
+### Eliminación de la columna `row_num`
 
-Su permanencia solo incrementaría el tamaño del dataset sin un beneficio real.
+La columna `row_num` fue creada exclusivamente para fines de depuración durante los pasos anteriores (por ejemplo, para identificar duplicados). Una vez finalizado ese proceso, dejó de ser útil para el análisis.
 
-### **📌 Razones para eliminar esta columna**
+#### ¿Por qué eliminarla?
 
-✅ **Evitar redundancia y reducir espacio:** Esta columna no tiene valor analítico y solo ocupa espacio en memoria.
+- ✅ **Evitar redundancia:** No aporta información analítica relevante.
+- ✅ **Reducir tamaño y limpiar estructura:** Eliminar columnas innecesarias mejora el rendimiento de consultas y simplifica la visualización.
+- ✅ **Facilita la exportación a otras herramientas:** Un dataset más liviano es más eficiente para trabajar en Tableau, Power BI, Pandas, etc.
 
-✅ **Mejorar eficiencia en consultas:** Al eliminar columnas innecesarias, las consultas SQL son más rápidas y eficientes.
 
-✅ **Facilitar exportación y visualización:** Un dataset más limpio y compacto es más fácil de manejar en herramientas como Tableau, Power BI o Pandas.
+---
 
 ## **📊 Resultado Final**
 
