@@ -104,7 +104,7 @@ Durante el proceso, se intentó eliminar los registros duplicados directamente d
 
 Sin embargo, MySQL arrojó el siguiente error:
 
-**Error 1288:**  
+**Error 1288:** 
 *"The target table of the DELETE is not updatable."*
 
 ![Error 1288](images/image-6.png)
@@ -117,9 +117,11 @@ Para resolver este inconveniente:
 
 - Se creó una nueva tabla llamada `company_layoffs_cleaned2`, replicando los datos existentes.
 - A esta tabla se le agregó manualmente la columna `row_num` como un campo de tipo `INT`.
-- Con esta estructura, fue posible ejecutar el `DELETE` sin restricciones y eliminar correctamente los registros duplicados.
 
-![Creación de nueva tabla](images/creacion_cleaned2.png)  
+✅ Con esta estructura, fue posible ejecutar el `DELETE` sin restricciones y eliminar correctamente los registros duplicados.
+
+![Creación de nueva tabla](images/image-8.png)
+  
 ![Código funcionando](images/delete_exitoso.png)
 
 ---
