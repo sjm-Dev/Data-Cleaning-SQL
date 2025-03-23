@@ -231,11 +231,13 @@ En la columna izquierda se muestra el formato por defecto de la variable `date`,
 
 En esta etapa se identificaron y trataron los valores faltantes en la columna `industry`, con el objetivo de mejorar la calidad general del dataset y facilitar consultas más limpias.
 
+![Valores vacíos a NULL](images/image-21.png)
+
 ### Reemplazo de valores vacíos
 
 Primero, se reemplazaron los valores vacíos (cadenas vacías) por `NULL`. Esto permite manejar de forma más eficiente los datos faltantes en SQL, ya que las funciones y filtros están preparados para interpretar `NULL`, pero no espacios vacíos.
 
-![Valores vacíos a NULL](images/image-21.png)
+![JOIN aplicado](images/image22.png)
 
 ---
 
@@ -247,7 +249,7 @@ Se realizó un `JOIN` entre registros de la misma compañía, copiando el valor 
 
 📌 Este enfoque evita cargar datos arbitrarios y mantiene la lógica interna del dataset.
 
-![JOIN aplicado](images/image-22.png)
+
 
 ---
 
