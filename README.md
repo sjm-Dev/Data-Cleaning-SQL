@@ -276,7 +276,12 @@ En esta etapa, se refina el dataset eliminando información que no aporta valor 
 
 Se eliminaron todas las filas donde las columnas `total_laid_off` y `percentage_laid_off` estaban vacías. Aunque podrían haberse conservado, su ausencia genera incertidumbre en el análisis y puede distorsionar los resultados.
 
+Antes de la eliminación de filas nulas:
 ![Filas con valores nulos](images/image-25.png)
+
+Luego de la eliminación de filas nulas:
+![Filas sin valores nulos](images/image-26.png)
+
 
 #### ¿Por qué eliminarlas?
 
@@ -284,7 +289,6 @@ Se eliminaron todas las filas donde las columnas `total_laid_off` y `percentage_
 - ✅ **Imputación poco confiable:** No hay suficiente contexto para completar los valores sin alterar la integridad del dataset.
 - ✅ **Impacto negativo en visualizaciones y modelos:** Algunos dashboards o modelos de Machine Learning no manejan bien los valores `NULL`, lo que puede generar errores o resultados inconsistentes.
 
-![Filas sin valores nulos](images/image-26.png)
 
 ---
 
