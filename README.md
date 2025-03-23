@@ -50,13 +50,13 @@ Es un ejemplo práctico de cómo se trabaja con datos reales en cualquier puesto
 
 A continuación se muestra una vista previa del dataset recibido:
 
-![Vista del dataset](image.png)
+![Vista Dataset](images/image-26.png)
 
 ### 📏 Dimensión del dataset
 
 El conjunto de datos original cuenta con una cantidad significativa de registros y columnas, lo cual hace aún más importante asegurar su calidad antes de analizarlo:
 
-![Vista del dataset original](images/image-1.png)
+![Dimension Dataset](images/image-1.png)
 
 ---
 
