@@ -210,8 +210,8 @@ Originalmente, la columna `date` estaba en formato `TEXT`, lo que impedía reali
 
 Se utilizó la función `STR_TO_DATE()` para convertir los valores y posteriormente se cambió el tipo de dato con `ALTER TABLE`.
 
-📷 **Antes de la conversión:**
-
+📷 **Conversión:**
+En la columna izquierda se muestra el formato por defecto de la variable `date`, mientras que en la columna de al lado se muestra la conversión hecha:
 ![Date antes](images/image-18.png)
 
 📷 **Después del `UPDATE`:**
