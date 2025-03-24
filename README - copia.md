@@ -325,7 +325,7 @@ After applying the full cleaning and transformation process, the result is a **s
 
 ---
 
-## 🧩 Possible Improvements
+## Possible Improvements
 
 Although the dataset is now clean and usable, in a real-world environment further improvements could include:
 
