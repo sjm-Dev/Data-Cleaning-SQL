@@ -73,7 +73,7 @@ Below is a preview of the original dataset:
 
 ![Dataset Preview](images/image-26.png)
 
-### 📏 Dataset Dimensions
+### Dataset Dimensions
 
 The dataset contains a significant number of rows and columns, which makes it even more important to ensure data quality before any analysis:
 
