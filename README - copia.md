@@ -5,7 +5,7 @@
 This project was developed as a comprehensive data cleaning exercise using SQL, simulating a real-world scenario with raw information.  
 The goal was to apply best practices for cleaning, standardization, and validation, with a strong focus on the quality and usability of the final data.
 
-🔗 **Full process code:** [`data_cleaning.sql`](./data_cleaning.sql)
+🔗 **Full SQL code:** [`data_cleaning.sql`](./data_cleaning.sql)
 
 ---
 
@@ -279,7 +279,7 @@ In this stage, the dataset was refined by removing information that does not add
 
 ---
 
-### Removing rows with missing data: `total_laid_off` and `percentage_laid_off` (condition: 'AND')
+### Removing rows with missing data: `total_laid_off` and `percentage_laid_off` (Logic condition: 'AND')
 
 All rows where both `total_laid_off` and `percentage_laid_off` were empty were removed.  
 Although they could have been kept, the missing data adds uncertainty and can distort results.
@@ -320,8 +320,6 @@ After applying the full cleaning and transformation process, the result is a **s
 ✔ **Higher quality and accuracy:** NULL values were reduced and the dataset was optimized
 
 *This kind of cleaning is a critical step in any data pipeline, ensuring a solid foundation for dashboards, reports, or predictive modeling.*
-
-📎 **Full process code:** [`data_cleaning.sql`](https://www.notion.so/Data-Cleaning-MySQL-Full-Project-1ac30b66251980089dffda3ae4cf6f72?pvs=21)
 
 ---
 
