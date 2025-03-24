@@ -54,6 +54,14 @@ It’s a practical example of how data is prepared in real-world roles related t
 
 ---
 
+## 📁 Dataset Source
+
+*This project was created for learning purposes and uses simulated data inspired by educational resources.*
+
+The dataset file is not included in this repository due to third-party ownership.
+
+---
+
 ## Step-by-step cleaning process
 
 ### 📂 Original Dataset
