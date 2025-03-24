@@ -1,21 +1,20 @@
-# 📊 Proyecto de Data Cleaning - MySQL
+# 📊 Data Cleaning Project - MySQL
 
-## Sobre el proyecto
+## About the project
 
-Este proyecto fue desarrollado como una práctica completa de limpieza de datos usando SQL, simulando un escenario real de trabajo con información cruda.  
-El objetivo fue aplicar buenas prácticas de depuración, estandarización y validación, con foco en la calidad y utilidad de los datos finales.
+This project was developed as a complete data cleaning practice using SQL, simulating a real-world scenario working with raw information.The goal was to apply best practices for cleaning, standardization, and validation, focusing on the quality and usefulness of the final data.
 
-🔗 **Código completo del proceso:** [`data_cleaning.sql`](./data_cleaning.sql)
+🔗 **Full SQL Code:** [`data_cleaning.sql`](./data_cleaning.sql)
 
 ---
 
 
-## 📌 Contenido  
+## 📌 Table of Contents
 
-1. [Descripción](#Descripción)  
-2. [Objetivo](#Objetivo)  
-3. [Proceso de limpieza paso a paso](#Proceso-de-limpieza-paso-a-paso)  
-   - [PASO 1: Eliminación de Duplicados](#paso-1-eliminación-de-duplicados)  
+1. [Description](#Description)  
+2. [Objective](#Objective)  
+3. [Step-by-step cleaning process](#Step-by-step-cleaning-process)  
+   - [STEP 1: Duplicate Removal](#Step-1-duplicate-removal) 
    - [PASO 2: Estandarización de Datos](#paso-2-estandarización-de-datos)  
    - [PASO 3: Manejo de valores nulos](#paso-3-manejo-de-valores-nulos)  
    - [PASO 4: Eliminación de datos NULL y columnas innecesarias](#paso-4-eliminación-de-datos-null-y-columnas-innecesarias)  
@@ -24,7 +23,7 @@ El objetivo fue aplicar buenas prácticas de depuración, estandarización y val
   
 ---
 
-## Descripción
+## Description
 Este proyecto muestra cómo **limpiar y preparar una base de datos usando solo SQL**, tal como se hace en escenarios reales de trabajo.  
 El dataset original contenía errores comunes como **duplicados, valores vacíos, formatos inconsistentes y columnas innecesarias**.
 
@@ -41,7 +40,7 @@ Con esto, se obtiene un **dataset confiable y ordenado**, listo para usar en her
 
 
 
-## **Objetivo** 
+## **Objective** 
 El objetivo de este proyecto es **mostrar cómo transformar un conjunto de datos desordenado en una base limpia, estructurada y útil para análisis**.
 
 Esto incluye:
@@ -54,7 +53,7 @@ Es un ejemplo práctico de cómo se trabaja con datos reales en cualquier puesto
 
 --- 
 
-## Proceso de limpieza paso a paso
+## Step-by-step cleaning process
 
 ### 📂 Dataset original
 
