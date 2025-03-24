@@ -86,7 +86,7 @@ Se realiza una copia exacta de la estructura y los datos de la tabla `company_la
 
 ---
 
-## PASO 1: Eliminación de Duplicados
+## STEP 1: Duplicate Removal
 
 Los datos duplicados pueden distorsionar análisis y visualizaciones, generando **resultados incorrectos o inconsistencias**. Para evitar esto, el primer paso del proceso consistió en identificar y eliminar registros repetidos.
 
