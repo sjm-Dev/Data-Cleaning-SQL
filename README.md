@@ -16,10 +16,10 @@ This project was developed as a complete data cleaning practice using SQL, simul
 3. [Step-by-step cleaning process](#Step-by-step-cleaning-process)  
    - [STEP 1: Duplicate Removal](#Step-1-duplicate-removal) 
    - [STEP 2: Data Standardization](#Step-2-data-standardization)  
-   - [PASO 3: Manejo de valores nulos](#paso-3-manejo-de-valores-nulos)  
-   - [PASO 4: Eliminación de datos NULL y columnas innecesarias](#paso-4-eliminación-de-datos-null-y-columnas-innecesarias)  
-4. [Resultado final](#-resultado-final)
-5. [Posibles Mejoras](#-posibles-mejoras)  
+   - [STEP 3: Handling Null Values](#Step-3-handling-null-values)  
+   - [STEP 4: Deleting Null Records and Unnecessary Columns](#Step-4-deleting-null-records-and-unnecessary-columns)  
+4. [Final Result](#Final-result)
+5. [Possible Improvements](#Possible-improvements)  
   
 ---
 
@@ -236,7 +236,7 @@ En la columna izquierda se muestra el formato por defecto de la variable `date`,
 
 
 
-## PASO 3: Manejo de valores vacíos
+## STEP 3: Handling Null Values
 
 En esta etapa se identificaron y trataron los valores faltantes en la columna `industry`, con el objetivo de mejorar la calidad general del dataset y facilitar consultas más limpias.
 
@@ -268,14 +268,14 @@ Después de realizar el `JOIN`, se ejecutó un `SELECT` para verificar que los v
 
 ---
 
-### Resultado final
+### Final Result
 
 Tras aplicar el `UPDATE`, la columna `industry` quedó actualizada. Todas las compañías, `company`, tienen una industria asignada **cuando fue posible inferirla con certeza** a partir de los datos existentes. En este caso, lo que se hizo con el `JOIN` es que para las filas de la companía `Airbnb` se asigna la misma industria `Travel`.
 
 ![Industry final actualizada](images/image-24.png)
 
 
-## PASO 4: Eliminación de datos NULL y columnas innecesarias
+## STEP 4: Deleting Null Records and Unnecessary Columns
 
 En esta etapa, se refina el dataset eliminando información que no aporta valor al análisis final. Esto ayuda a mejorar la calidad, la eficiencia y la interpretabilidad del conjunto de datos.
 
@@ -326,7 +326,7 @@ Después de aplicar todo el proceso de limpieza y transformación, se obtuvo un 
 
 ---
 
-## 🧩 Posibles mejoras
+## 🧩 Possible Improvements
 
 Aunque el dataset quedó limpio y utilizable, en un entorno real podrían aplicarse mejoras adicionales como:
 
