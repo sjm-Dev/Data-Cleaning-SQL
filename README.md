@@ -326,7 +326,7 @@ Después de aplicar todo el proceso de limpieza y transformación, se obtuvo un 
 
 ---
 
-🧩 ## Possible Improvements
+## Possible Improvements
 
 Aunque el dataset quedó limpio y utilizable, en un entorno real podrían aplicarse mejoras adicionales como:
 
