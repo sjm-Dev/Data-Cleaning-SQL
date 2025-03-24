@@ -24,61 +24,60 @@ This project was developed as a complete data cleaning practice using SQL, simul
 ---
 
 ## Description
-Este proyecto muestra cómo **limpiar y preparar una base de datos usando solo SQL**, tal como se hace en escenarios reales de trabajo.  
-El dataset original contenía errores comunes como **duplicados, valores vacíos, formatos inconsistentes y columnas innecesarias**.
+This project demonstrates how to clean and prepare a database using only SQL, just like in real-world environments.The original dataset contained common issues such as duplicates, empty values, inconsistent formats, and unnecessary columns.
 
-Durante el proceso se aplicaron pasos clave como:
-- **Eliminación de duplicados**  
-- **Tratamiento de valores nulos**  
-- **Normalización de datos**  
-- **Reestructuración de la tabla final**  
+Key steps applied during the process:
 
-Con esto, se obtiene un **dataset confiable y ordenado**, listo para usar en herramientas como **Tableau, Power BI o en modelos de Machine Learning**.
+- Duplicate removal
+- Handling null values
+- Data normalization
+- Final table restructuring
 
-🛠️ **Tecnología usada:** `SQL`  
-📊 **Uso práctico:** Dejar los datos **limpios y listos para análisis, visualización o predicción**.
+As a result, we obtained a reliable and organized dataset, ready to be used in tools like Tableau, Power BI, or predictive models.
 
+🛠️ Technology used: SQL.
+📊 Use case: Ensuring data is clean and ready for analysis, visualization, or prediction.
 
+---
 
 ## **Objective** 
-El objetivo de este proyecto es **mostrar cómo transformar un conjunto de datos desordenado en una base limpia, estructurada y útil para análisis**.
+The goal of this project is to show how to transform a messy dataset into a clean, structured, and analysis-ready one.
 
-Esto incluye:
-- **Detectar y corregir errores** en los datos.
-- **Estandarizar campos** para lograr consistencia.  
-- Asegurar que la tabla final sea **clara, funcional y reutilizable**.
+This includes:
 
+- Identifying and fixing errors in the data.
+- Standardizing fields for consistency.  
+- Ensuring the final table is clear, functional, and reusable.
 
-Es un ejemplo práctico de cómo se trabaja con datos reales en cualquier puesto relacionado con **Data Analysis**, **Business Intelligence** o **Data Engineering**.
+It is a practical example of how real-world data is prepared in roles related to **Data Analysis**, **Business Intelligence** or **Data Engineering**.
 
 --- 
 
 ## Step-by-step cleaning process
 
-### 📂 Dataset original
+### 📂 Original Dataset
 
-A continuación se muestra una vista previa del dataset recibido:
+Here is a preview of the original dataset:
 
 ![Vista Dataset](images/image-26.png)
 
-### 📏 Dimensión del dataset
+### 📏 Dataset Dimensions
 
-El conjunto de datos original cuenta con una cantidad significativa de registros y columnas, lo cual hace aún más importante asegurar su calidad antes de analizarlo:
+The original dataset contains a significant number of records and columns, which makes ensuring its quality even more important before starting the analysis:
 
 ![Dimension Dataset](images/image-1.png)
 
 ---
 
-## Creación de una tabla de trabajo
+## Creating a Working Table
 
-Antes de iniciar el proceso de limpieza, se crea una **tabla de trabajo** a partir del dataset original.  
-Esta es una buena práctica común en entornos profesionales de análisis de datos, ya que permite trabajar de forma segura, ordenada y sin comprometer la información original.
+Before starting the cleaning process, a working table was created from the original dataset.This is a common best practice in professional data analysis environments, as it allows for safe and orderly work without compromising the original information.
 
-Se realiza una copia exacta de la estructura y los datos de la tabla `company_layoffs`, creando una nueva tabla llamada `company_layoffs_cleaned`, sobre la cual se aplicarán todas las transformaciones necesarias.
+An exact copy of the structure and data from the `company_layoffs` table was made, creating a new table named `company_layoffs_cleaned`, where all necessary transformations were applied.
 
 ![Copia de tabla](images/image-2.png)
 
-### Ventajas de trabajar con una copia
+### Benefits of working with a copy
 
 - **Preservar la fuente de datos original** ante cualquier error o pérdida de información.  
 - **Probar distintas técnicas de limpieza** sin afectar el dataset base.  

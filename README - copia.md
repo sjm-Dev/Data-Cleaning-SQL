@@ -172,7 +172,7 @@ After applying `TRIM()`, the values in the `company` column became more consiste
 
 Several rows had missing values in the `industry` column, which could affect grouped analysis or segmentation.
 
-📷 Example of NULL values:
+Example of NULL values:
 
 ![NULL in industry 1](images/image-13.png)  
 ![NULL in industry 2](images/image-14.png)
@@ -218,16 +218,16 @@ Originally, the `date` column was stored as `TEXT`, which made it hard to perfor
 
 The `STR_TO_DATE()` function was used to convert the values, followed by an `ALTER TABLE` to change the column type.
 
-📷 **Conversion:**  
+**Conversion:**  
 On the left, the original format; on the right, the converted format
 
 ![Date Before](images/image-18.png)
 
-📷 **After the `UPDATE`:**
+**After the `UPDATE`:**
 
 ![Date After Update](images/image-19.png)
 
-📷 **After altering column type:**
+**After altering column type:**
 
 ![Date Column Changed](images/image-20.png)
 
