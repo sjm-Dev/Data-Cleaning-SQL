@@ -56,15 +56,18 @@ It’s a practical example of how data is prepared in real-world roles related t
 
 ## 📁 Dataset Source
 
-*This project was created for learning purposes and uses simulated data inspired by educational resources.*
+The dataset used in this project is based on a simulated scenario of tech layoffs.  
+It was adapted for educational purposes from publicly available learning resources.
 
-The dataset file is not included in this repository due to third-party ownership.
+*Due to usage rights, the original dataset file is not included in this repository.*
+
+The structure, fields, and sample data were adjusted to mimic a real-world dataset, suitable for SQL data cleaning practice.
 
 ---
 
 ## Step-by-step cleaning process
 
-### 📂 Original Dataset
+### Original Dataset
 
 Below is a preview of the original dataset:
 
