@@ -15,7 +15,7 @@ This project was developed as a complete data cleaning practice using SQL, simul
 2. [Objective](#Objective)  
 3. [Step-by-step cleaning process](#Step-by-step-cleaning-process)  
    - [STEP 1: Duplicate Removal](#Step-1-duplicate-removal) 
-   - [PASO 2: Estandarización de Datos](#paso-2-estandarización-de-datos)  
+   - [STEP 2: Data Standardization](#Step-2-data-standardization)  
    - [PASO 3: Manejo de valores nulos](#paso-3-manejo-de-valores-nulos)  
    - [PASO 4: Eliminación de datos NULL y columnas innecesarias](#paso-4-eliminación-de-datos-null-y-columnas-innecesarias)  
 4. [Resultado final](#-resultado-final)
@@ -146,7 +146,7 @@ Resultado final tras eliminar duplicados:
 
 
 
-## **PASO 2: Estandarización de Datos**
+## **STEP 2: Data Standardization**
 
 ### Limpieza de espacios en blanco — Columna `company`
 
