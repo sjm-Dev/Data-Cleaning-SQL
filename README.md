@@ -2,8 +2,8 @@
 
 ## About the project
 
-This project was developed as a comprehensive data cleaning exercise using SQL, simulating a real-world scenario with raw information.  
-The goal was to apply best practices for cleaning, standardization, and validation, with a strong focus on the quality and usability of the final data.
+I developed this project as a hands-on data cleaning case using MySQL, inspired by a public tutorial but adapted and restructured to reflect a real-world scenario.  
+It showcases my ability to work with raw data, apply SQL best practices, and ensure the cleaned data is reliable, consistent, and ready for analysis.
 
 🔗 **Full SQL code:** [`data_cleaning.sql`](./data_cleaning.sql)
 
